@@ -2957,3 +2957,5 @@ org.eclipse.core.runtime.CoreException: Launch configuration Test references non
 2022-06-08 16:48:05,871 [Worker-87: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\workspace\6_Spring\Spring02_Bean\src\test\resources
 2022-06-08 16:49:49,563 [Worker-85: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
 2022-06-08 16:49:49,565 [Worker-85: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\workspace\6_Spring\Spring02_Bean\src\main\resources
+2022-06-08 16:49:49,569 [Worker-85: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-06-08 16:49:49,572 [Worker-85: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\workspace\6_Spring\Spring02_Bean\src\test\resources
