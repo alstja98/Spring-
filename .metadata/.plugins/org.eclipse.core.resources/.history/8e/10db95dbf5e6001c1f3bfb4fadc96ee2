@@ -1,0 +1,11 @@
+package com.test04;
+
+public class MTest {
+
+	public static void main(String[] args) {
+		//생성된 bean 2개를 가져다
+		//저장된 값 확인
+
+	}
+
+}

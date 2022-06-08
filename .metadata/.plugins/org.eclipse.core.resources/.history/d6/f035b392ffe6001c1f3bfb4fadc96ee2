@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<bean id="hong" class="com.test06.Emp">
+		<property name="name" value="홍길동"></property>
+		<property name="salary" value="3500000"></property>
+	</bean>
+	<bean id="honggd" class="com.test06.Developer">
+		<constructor-arg name="emp" value="hong"></constructor-arg>
+		<constructor-arg index="1" value="기술"></constructor-arg>
+	</bean>
+</beans>
