@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper
-PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
-"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="myboard">
 	<resultMap type="boardDto" id="boardMap">
 		<result property="myno" column="MYNO"/>
@@ -10,16 +10,46 @@ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
 		<result property="mycontent" column="MYCONTENT"/>
 		<result property="mydate" column="MYDATE"/>
 	</resultMap>
+
 	<select id="selectList" resultType="boardDto">
-		SELECT * FROM MYBOARD ORDER BY MYNO DESC
+		SELECT *
+		FROM MYBOARD
+		ORDER BY MYNO DESC
 	</select>
 
-	<select id="selectOne" parameterType="int" resultMap="boardMap">
-		SELECT MYNO,MYNAME,MYTITLE,MYCONTENT,MYDATE FROM MYBOARD WHERE MYNO=#{myno}
+	<select id="selectOne" parameterType="int"  resultMap="boardMap" >
+		SELECT MYNO, MYNAME, MYTITLE, MYCONTENT, MYDATE
+		FROM MYBOARD
+		WHERE MYNO = #{myno}
 	</select>
+	
 	
 	<insert id="insert" parameterType="boardDto">
 		INSERT INTO MYBOARD
-		VALUES(NULL,#{myname},#{mytitle},#{mycontent},NOW())
+		VALUES( NULL, #{myname}, #{mytitle}, #{mycontent}, NOW() )
 	</insert>
+	
+	<update id="update" parameterType="boardDto">
+		UPDATE MYBOARD
+		SET MYTITLE=#{mytitle}, MYCONTENT=#{mycontent}
+		WHERE MYNO=#{myno}
+	</update>
+	
+	<delete id="delete">
+		DELETE FROM MYBOARD WHERE MYNO=#{myno}
+	</delete>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
 </mapper>

@@ -14,7 +14,7 @@
 		</tr>
 		<tr>
 			<th>TITLE</th>
-			<th>${dto.mytitle }</th>
+			<td>${dto.mytitle }</td>
 		</tr>
 		<tr>
 			<th>CONTENT</th>
@@ -23,10 +23,16 @@
 		<tr>
 			<td colspan="2" align="right">
 				<input type="button" value="목록" onclick="location.href='list.do'">
-				<input type="button" value="수정" onclick="">
-				<input type="button" value="삭제" onclick="">
-			</td>
+				<input type="button" value="수정" onclick="location.href='updateform.do?myno=${dto.myno}'">
+				<input type="button" value="삭제" onclick="location.href='delete.do?myno=${dto.myno}'">
+			</td> 
 		</tr>
 	</table>
 </body>
 </html>
+
+
+
+
+
+
