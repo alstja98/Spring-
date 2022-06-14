@@ -38,4 +38,18 @@
 		<appender-ref ref="console" />
 	</root>
 	
+	<logger name="org.ibatis">
+		<level value="info"></level>
+	</logger>
+	<logger name="java.sql">
+		<level value="info"></level>
+	</logger>
 </log4j:configuration>
+<!-- 
+	FATAL:치명적인 에러
+	ERROR:에러
+	WARN:경고
+	INFO:정보
+	DEBUG:디버깅 정보
+	TRACE: DEBUG + @
+ -->

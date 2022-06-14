@@ -14,4 +14,14 @@ _filter
 10.web.xml
 
 _aop
-11.pom.xml: aspectjweaver, aspectjrt
+11.pom.xml: aspectjweaver, aspectjrt(이미 있음)
+12.com/mvc/upgrade/common/aop/LogAop
+13.WEB-INF/spring/appServlet/aop-context.xml
+14. web.xml
+
+_login
+16.pom.xml: jackson-core, jackson-databind, jackson-annotation
+17.WEB-INF/spring/sql/test_db.txt
+18.dto,dao,service, controller
+19.src/main/resources/mybatis/member-mapper.xml
+20.WEB-INF/spring/sql/config.xml
