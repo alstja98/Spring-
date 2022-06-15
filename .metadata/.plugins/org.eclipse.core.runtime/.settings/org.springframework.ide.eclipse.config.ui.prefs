@@ -26,5 +26,9 @@
 //com.springsource.config.ui.prefs.activePageIndex\:/SpringMVC02/src/main/webapp/WEB-INF/spring/appServlet/servlet-context.xml=<?xml version\="1.0" encoding\="UTF-8"?>\r\n<activePage index\="0"/>
 //com.springsource.config.ui.prefs.activePageIndex\:/SpringMVC2_filter2_aop/src/main/webapp/WEB-INF/spring/appServlet/aop-context.xml=<?xml version\="1.0" encoding\="UTF-8"?>\r\n<activePage index\="0"/>
 //com.springsource.config.ui.prefs.activePageIndex\:/SpringMVC2_filter2_aop/src/main/webapp/WEB-INF/spring/appServlet/applicationContext.xml=<?xml version\="1.0" encoding\="UTF-8"?>\r\n<activePage index\="0"/>
+//com.springsource.config.ui.prefs.activePageIndex\:/SpringMVC2_filter2_aop_login_interceptor/src/main/webapp/WEB-INF/spring/appServlet/servlet-context.xml=<?xml version\="1.0" encoding\="UTF-8"?>\r\n<activePage index\="0"/>
+//com.springsource.config.ui.prefs.activePageIndex\:/SpringMVC2_filter2_aop_login_interceptor_transaction/src/main/webapp/WEB-INF/spring/appServlet/applicationContext.xml=<?xml version\="1.0" encoding\="UTF-8"?>\r\n<activePage index\="0"/>
+//com.springsource.config.ui.prefs.activePageIndex\:/SpringMVC2_filter2_aop_login_interceptor_transaction/src/main/webapp/WEB-INF/spring/appServlet/servlet-context.xml=<?xml version\="1.0" encoding\="UTF-8"?>\r\n<activePage index\="0"/>
+//com.springsource.config.ui.prefs.activePageIndex\:/SpringMVC2_filter2_aop_login_interceptor_transaction_password/src/main/webapp/WEB-INF/spring/appServlet/security-context.xml=<?xml version\="1.0" encoding\="UTF-8"?>\r\n<activePage index\="0"/>
 com.springsource.config.ui.prefs.tabs.dialog=always
 eclipse.preferences.version=1
