@@ -6,6 +6,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 import com.boot.jdbc.model.dto.MyDto;
@@ -32,17 +33,17 @@ public class MyBoardController {
 	}
 
 	@GetMapping("/insertform")
-	public String insert() {
+	public String insertForm() {
 		return "myboardinsert";
 	}
 	
-	@GetMapping("/insert")
+	@PostMapping("/insert")
 	public String insert(MyDto dto) {
 		int res = myService.insert(dto);
 		if(res>0) {
-			return "redirect:list";
+			return "redirect:/myboard/list";
 		}else {
-			return "myboardinsert";
+			return "redirect:/myboard/insertform";
 		}
 	}
 	
@@ -52,16 +53,26 @@ public class MyBoardController {
 		return "myboardupdate";
 	}
 	
-	@GetMapping("/update")
+	@PostMapping("/update")
 	public String update(MyDto dto) {
 		int res = myService.update(dto);
 		if(res>0) {
-			return "redirect:detail?myno="+dto.getMyno();
+			return "redirect:/myboard/list";
 		}else {
-			return "redirect:updateform?myno="+dto.getMyno();
+			return "redirect:/myboard/updateform?myno="+dto.getMyno();
 		}
 		
 	}
+	
+	@GetMapping("/delete")
+	public String delete(int myno) {
+		if(myService.delete(myno)>0) {
+			return "redirect:/myboard/list";
+		}else {
+			return "redirect:/myboard/detail?myno="+myno;
+		}
+	}
+	
 	/*
 	 *  /detail:상세보기
 	 *  /insertform:글작성페이지이동

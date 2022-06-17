@@ -36,7 +36,7 @@ public class MyServiceImpl implements MyService{
 
 	@Override
 	public int delete(int myno) {
-		return 0;
+		return myBoardMapper.delete(myno);
 	}
 
 }

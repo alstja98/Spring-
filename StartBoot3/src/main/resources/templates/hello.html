@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<!-- controller가 응답하는 페이지는 templates 폴더 안에 있어야함. 그게 아니면 resources나 web-inf/views의 prefix, suffix등 설정해야함. -->
+	<h1 th:text="${name}">hello</h1>
+	<a href="/">index</a>
+		
+</body>
+</html>
