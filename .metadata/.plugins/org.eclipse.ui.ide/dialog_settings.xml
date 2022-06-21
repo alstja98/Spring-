@@ -121,6 +121,7 @@
 		<item key="SmartImportRootWizardPage.STORE_NESTED_PROJECTS" value="true"/>
 		<item key="SmartImportRootWizardPage.STORE_CONFIGURE_NATURES" value="true"/>
 		<list key="org.eclipse.ui.internal.wizards.datatransfer.SmartImportRootWizardPage.knownSources">
+			<item value="C:\Users\오민섬\Desktop\dog.zip"/>
 			<item value="C:\workspace\6_Spring\Spring01_Hello"/>
 			<item value="C:\workspace\6_Spring\Spring02_Bean"/>
 		</list>
