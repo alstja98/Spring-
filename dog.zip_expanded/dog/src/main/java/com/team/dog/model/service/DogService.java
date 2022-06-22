@@ -11,14 +11,14 @@ import com.team.dog.model.mapper.DogMapper;
 @Service
 public class DogService {
 
-	@Autowired
-	private DogMapper dogMapper;
-	
-	public List<DogDto> selectList() {
-		return dogMapper.selectList();
-	}
-	
-	public List<DogDto> selectSearchList(String hospitalname){
-		return dogMapper.selectSearchList(hospitalname);
-	}
+   @Autowired
+   private DogMapper dogMapper;
+   
+   public List<DogDto> selectList() {
+      return dogMapper.selectList();
+   }
+   
+   public List<DogDto> selectSearchList(String hospitalname){
+      return dogMapper.selectSearchList(hospitalname);
+   }
 }
